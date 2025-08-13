@@ -1,0 +1,45 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "alignment-insets" : {
+        "bottom" : -5,
+        "left" : 0,
+        "right" : -5,
+        "top" : 0
+      },
+      "compression-type" : "lossless",
+      "filename" : "shopIcon.jpg",
+      "idiom" : "universal",
+      "resizing" : {
+        "cap-insets" : {
+          "bottom" : 256,
+          "left" : 255,
+          "right" : 256,
+          "top" : 255
+        },
+        "center" : {
+          "height" : 1,
+          "mode" : "tile",
+          "width" : 1
+        },
+        "mode" : "9-part"
+      },
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "compression-type" : "automatic"
+  }
+}
