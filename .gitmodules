@@ -1,0 +1,3 @@
+[submodule "Clicker"]
+	path = Clicker
+	url = git@github.com:ssukharev/Clicker.git
