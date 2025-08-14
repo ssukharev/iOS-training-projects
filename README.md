@@ -2,6 +2,9 @@
   <h1>iOS-training-projects</h1>
 </div>
 
+![GitHub last commit](https://img.shields.io/github/last-commit/ssukharev/ios-training-projects?label=Last%20Commit)
+[![Language](https://img.shields.io/badge/Language-Swift-green.svg)]()
+[![Founded](https://img.shields.io/badge/Founded-August_2025-ff69b4.svg)]()
 
 These are my apps for iOS devices while I was studying development. There are both single-page and multi-page applications.
 
