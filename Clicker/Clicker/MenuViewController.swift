@@ -9,6 +9,8 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
+    @IBOutlet weak var startButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
