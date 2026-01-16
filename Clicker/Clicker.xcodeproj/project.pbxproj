@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,7 +23,18 @@
 		74E5E0DD2E297E0B00FCB7E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E5E0DB2E297E0B00FCB7E1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		34BA61AF2F1A6DB6006C6FD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74E5E0C52E297E0900FCB7E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74E5E0CC2E297E0900FCB7E1;
+			remoteInfo = Clicker;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		34BA61AB2F1A6DB6006C6FD2 /* ClickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7450AE192E2ED608000BBA71 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		7450AE1B2E2ED905000BBA71 /* KanekiInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanekiInfoViewController.swift; sourceTree = "<group>"; };
 		748779762E3664C800D6E227 /* SecretStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretStyleViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +52,18 @@
 		74E5E0DE2E297E0B00FCB7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		34BA61AC2F1A6DB6006C6FD2 /* ClickerTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ClickerTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		34BA61A82F1A6DB6006C6FD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74E5E0CA2E297E0900FCB7E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -53,31 +75,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		74E5E0C42E297E0900FCB7E1 = {
+		34BA61A62F1A6C75006C6FD2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				74E5E0CF2E297E0900FCB7E1 /* Clicker */,
-				74E5E0CE2E297E0900FCB7E1 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		74E5E0CE2E297E0900FCB7E1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				74E5E0CD2E297E0900FCB7E1 /* Clicker.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		74E5E0CF2E297E0900FCB7E1 /* Clicker */ = {
-			isa = PBXGroup;
-			children = (
-				74E5E0D02E297E0900FCB7E1 /* AppDelegate.swift */,
-				74E5E0D22E297E0900FCB7E1 /* SceneDelegate.swift */,
-				74E5E0D62E297E0900FCB7E1 /* Main.storyboard */,
-				74E5E0D92E297E0B00FCB7E1 /* Assets.xcassets */,
-				74E5E0DB2E297E0B00FCB7E1 /* LaunchScreen.storyboard */,
-				74E5E0DE2E297E0B00FCB7E1 /* Info.plist */,
 				7499ED082E2C2EDB000CDB2F /* MenuViewController.swift */,
 				7499ED022E2C2EB5000CDB2F /* KanekiViewController.swift */,
 				7499ED042E2C2EC0000CDB2F /* GutsViewController.swift */,
@@ -87,12 +87,67 @@
 				74B3B6C02E32BEBC00F0000B /* GutsInfoViewController.swift */,
 				748779762E3664C800D6E227 /* SecretStyleViewController.swift */,
 			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		74E5E0C42E297E0900FCB7E1 = {
+			isa = PBXGroup;
+			children = (
+				74E5E0CF2E297E0900FCB7E1 /* Clicker */,
+				34BA61AC2F1A6DB6006C6FD2 /* ClickerTests */,
+				74E5E0CE2E297E0900FCB7E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74E5E0CE2E297E0900FCB7E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74E5E0CD2E297E0900FCB7E1 /* Clicker.app */,
+				34BA61AB2F1A6DB6006C6FD2 /* ClickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74E5E0CF2E297E0900FCB7E1 /* Clicker */ = {
+			isa = PBXGroup;
+			children = (
+				34BA61A62F1A6C75006C6FD2 /* ViewControllers */,
+				74E5E0D02E297E0900FCB7E1 /* AppDelegate.swift */,
+				74E5E0D22E297E0900FCB7E1 /* SceneDelegate.swift */,
+				74E5E0D62E297E0900FCB7E1 /* Main.storyboard */,
+				74E5E0D92E297E0B00FCB7E1 /* Assets.xcassets */,
+				74E5E0DB2E297E0B00FCB7E1 /* LaunchScreen.storyboard */,
+				74E5E0DE2E297E0B00FCB7E1 /* Info.plist */,
+			);
 			path = Clicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		34BA61AA2F1A6DB6006C6FD2 /* ClickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34BA61B12F1A6DB6006C6FD2 /* Build configuration list for PBXNativeTarget "ClickerTests" */;
+			buildPhases = (
+				34BA61A72F1A6DB6006C6FD2 /* Sources */,
+				34BA61A82F1A6DB6006C6FD2 /* Frameworks */,
+				34BA61A92F1A6DB6006C6FD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34BA61B02F1A6DB6006C6FD2 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				34BA61AC2F1A6DB6006C6FD2 /* ClickerTests */,
+			);
+			name = ClickerTests;
+			packageProductDependencies = (
+			);
+			productName = ClickerTests;
+			productReference = 34BA61AB2F1A6DB6006C6FD2 /* ClickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		74E5E0CC2E297E0900FCB7E1 /* Clicker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74E5E0E12E297E0B00FCB7E1 /* Build configuration list for PBXNativeTarget "Clicker" */;
@@ -117,9 +172,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					34BA61AA2F1A6DB6006C6FD2 = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 74E5E0CC2E297E0900FCB7E1;
+					};
 					74E5E0CC2E297E0900FCB7E1 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -142,11 +201,19 @@
 			projectRoot = "";
 			targets = (
 				74E5E0CC2E297E0900FCB7E1 /* Clicker */,
+				34BA61AA2F1A6DB6006C6FD2 /* ClickerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		34BA61A92F1A6DB6006C6FD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74E5E0CB2E297E0900FCB7E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,6 +227,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		34BA61A72F1A6DB6006C6FD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		74E5E0C92E297E0900FCB7E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -178,6 +252,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34BA61B02F1A6DB6006C6FD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74E5E0CC2E297E0900FCB7E1 /* Clicker */;
+			targetProxy = 34BA61AF2F1A6DB6006C6FD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		74E5E0D62E297E0900FCB7E1 /* Main.storyboard */ = {
@@ -199,6 +281,59 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		34BA61B22F1A6DB6006C6FD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BB694WD576;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Suharev.ClickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clicker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Clicker";
+			};
+			name = Debug;
+		};
+		34BA61B32F1A6DB6006C6FD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BB694WD576;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Suharev.ClickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clicker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Clicker";
+			};
+			name = Release;
+		};
 		74E5E0DF2E297E0B00FCB7E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -328,7 +463,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,7 +492,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,6 +509,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		34BA61B12F1A6DB6006C6FD2 /* Build configuration list for PBXNativeTarget "ClickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34BA61B22F1A6DB6006C6FD2 /* Debug */,
+				34BA61B32F1A6DB6006C6FD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		74E5E0C82E297E0900FCB7E1 /* Build configuration list for PBXProject "Clicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
