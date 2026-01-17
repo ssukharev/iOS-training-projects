@@ -10,11 +10,14 @@ import FLAnimatedImage
 
 class SecretStyleViewController: UIViewController {
 
-    @IBOutlet weak var stickerCat1: FLAnimatedImageView!
+//    @IBOutlet weak var stickerCat1: FLAnimatedImageView!
 
+    
+    @IBOutlet weak var stickerCatDissapoint: FLAnimatedImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        playGifFromAssets(named: "stickerTest")
+        playGifFromAssets(named: "stickerCatDissapoint")
     }
 
     private func playGifFromAssets(named name: String) {
@@ -22,7 +25,7 @@ class SecretStyleViewController: UIViewController {
             return
         }
         let animated = FLAnimatedImage(animatedGIFData: asset.data)
-        stickerCat1.contentMode = .scaleAspectFit
-        stickerCat1.animatedImage = animated
+        stickerCatDissapoint.contentMode = .scaleAspectFit
+        stickerCatDissapoint.animatedImage = animated
     }
 }
