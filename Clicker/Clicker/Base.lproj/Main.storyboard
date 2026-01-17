@@ -320,25 +320,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="sticker1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="jnE-xV-5PU" customClass="NewFLAnimatedImageView" customModule="Clicker" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="65" width="191" height="286"/>
+                                <rect key="frame" x="0.0" y="0.0" width="191" height="286"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="stickerCatSad.gif" translatesAutoresizingMaskIntoConstraints="NO" id="t4g-l3-BOB" customClass="NewFLAnimatedImageView" customModule="Clicker" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="537" width="242" height="260"/>
+                                <rect key="frame" x="0.0" y="485" width="266" height="314"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="stickerCatDissapoint.gif" translatesAutoresizingMaskIntoConstraints="NO" id="x9u-ag-kY4" customClass="NewFLAnimatedImageView" customModule="Clicker" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="334" width="191" height="213"/>
+                                <rect key="frame" x="0.0" y="278" width="191" height="213"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="stickerCatFighter.gif" translatesAutoresizingMaskIntoConstraints="NO" id="960-ol-Tfd" customClass="NewFLAnimatedImageView" customModule="Clicker" customModuleProvider="target">
-                                <rect key="frame" x="183" y="65" width="207" height="292"/>
+                                <rect key="frame" x="183" y="0.0" width="207" height="292"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="stickerCatCute.gif" translatesAutoresizingMaskIntoConstraints="NO" id="b56-kb-5l0" customClass="NewFLAnimatedImageView" customModule="Clicker" customModuleProvider="target">
-                                <rect key="frame" x="183" y="334" width="322" height="521"/>
+                                <rect key="frame" x="183" y="278" width="322" height="521"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r9A-WQ-kYd">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="797"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="t2P-2z-s0V">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="797"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7Ep-Oo-RZh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
