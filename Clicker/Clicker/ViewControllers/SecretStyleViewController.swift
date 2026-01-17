@@ -8,24 +8,49 @@
 import UIKit
 import FLAnimatedImage
 
+public final class NewFLAnimatedImageView: FLAnimatedImageView {
+    
+    enum GifErrors: Error {
+        case gifNotFound
+    }
+    
+    public var fileName: String?
+    
+    public func playGifAnimation() throws {
+        guard let path = Bundle.main.path(forResource: self.fileName, ofType: "gif"),
+        let data = try? Data(contentsOf: URL(fileURLWithPath: path)) else {
+            throw GifErrors.gifNotFound
+        }
+        self.animatedImage = FLAnimatedImage(gifData: data)
+        self.contentMode = .scaleAspectFit
+    }
+}
+
 class SecretStyleViewController: UIViewController {
 
-//    @IBOutlet weak var stickerCat1: FLAnimatedImageView!
 
+    @IBOutlet weak var stickerCatHappy: NewFLAnimatedImageView!
+    @IBOutlet weak var stickerCatFighter: NewFLAnimatedImageView!
+    @IBOutlet weak var stickerCatDissapoint: NewFLAnimatedImageView!
+    @IBOutlet weak var stickerCatSad: NewFLAnimatedImageView!
+    @IBOutlet weak var stickerCatCute: NewFLAnimatedImageView!
     
-    @IBOutlet weak var stickerCatDissapoint: FLAnimatedImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        playGifFromAssets(named: "stickerCatDissapoint")
-    }
-
-    private func playGifFromAssets(named name: String) {
-        guard let asset = NSDataAsset(name: name) else {
-            return
-        }
-        let animated = FLAnimatedImage(animatedGIFData: asset.data)
-        stickerCatDissapoint.contentMode = .scaleAspectFit
-        stickerCatDissapoint.animatedImage = animated
+        stickerCatHappy.fileName = "stickerCatHappy"
+        try? stickerCatHappy.playGifAnimation()
+        
+        stickerCatSad.fileName = "stickerCatSad"
+        try? stickerCatSad.playGifAnimation()
+        
+        stickerCatCute.fileName = "stickerCatCute"
+        try? stickerCatCute.playGifAnimation()
+        
+        stickerCatDissapoint.fileName = "stickerCatDissapoint"
+        try? stickerCatDissapoint.playGifAnimation()
+        
+        stickerCatFighter.fileName = "stickerCatFighter"
+        try? stickerCatFighter.playGifAnimation()
     }
 }

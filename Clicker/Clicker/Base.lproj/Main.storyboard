@@ -319,24 +319,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="797"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sticker3.gif" translatesAutoresizingMaskIntoConstraints="NO" id="tHh-Pn-dFj" customClass="FLAnimatedImageView">
-                                <rect key="frame" x="16" y="47" width="214" height="211"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="sticker1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="jnE-xV-5PU" customClass="NewFLAnimatedImageView" customModule="Clicker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="65" width="191" height="286"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sticker2.gif" highlightedImage="sticker2.gif" translatesAutoresizingMaskIntoConstraints="NO" id="H3N-i0-A9B">
-                                <rect key="frame" x="0.0" y="514" width="195" height="249"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="stickerCatSad.gif" translatesAutoresizingMaskIntoConstraints="NO" id="t4g-l3-BOB" customClass="NewFLAnimatedImageView" customModule="Clicker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="537" width="242" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sticker1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="NlX-zu-22P">
-                                <rect key="frame" x="200" y="488" width="190" height="300"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="stickerCatDissapoint.gif" translatesAutoresizingMaskIntoConstraints="NO" id="x9u-ag-kY4" customClass="NewFLAnimatedImageView" customModule="Clicker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="334" width="191" height="213"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sticker1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="7XG-ML-wWQ">
-                                <rect key="frame" x="235" y="247" width="139" height="233"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="stickerCatFighter.gif" translatesAutoresizingMaskIntoConstraints="NO" id="960-ol-Tfd" customClass="NewFLAnimatedImageView" customModule="Clicker" customModuleProvider="target">
+                                <rect key="frame" x="183" y="65" width="207" height="292"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sticker4.gif" translatesAutoresizingMaskIntoConstraints="NO" id="ams-AJ-f9X">
-                                <rect key="frame" x="16" y="247" width="211" height="240"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="stickerCatCute.gif" translatesAutoresizingMaskIntoConstraints="NO" id="b56-kb-5l0" customClass="NewFLAnimatedImageView" customModule="Clicker" customModuleProvider="target">
+                                <rect key="frame" x="183" y="334" width="322" height="521"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -344,7 +344,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="stickerCatDissapoint" destination="tHh-Pn-dFj" id="ca6-w0-q8q"/>
+                        <outlet property="stickerCatCute" destination="b56-kb-5l0" id="haK-ds-eaX"/>
+                        <outlet property="stickerCatDissapoint" destination="x9u-ag-kY4" id="xb4-9o-QP5"/>
+                        <outlet property="stickerCatFighter" destination="960-ol-Tfd" id="nTL-F2-ubl"/>
+                        <outlet property="stickerCatHappy" destination="jnE-xV-5PU" id="eIl-ph-N5y"/>
+                        <outlet property="stickerCatSad" destination="t4g-l3-BOB" id="42u-hR-oHo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJN-iC-8h9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -506,9 +510,10 @@
         <image name="kaneki" width="409" height="387"/>
         <image name="shopIcon" width="170.66667175292969" height="170.66667175292969"/>
         <image name="sticker1.gif" width="373" height="512"/>
-        <image name="sticker2.gif" width="384" height="512"/>
-        <image name="sticker3.gif" width="512" height="512"/>
-        <image name="sticker4.gif" width="512" height="512"/>
+        <image name="stickerCatCute.gif" width="412" height="512"/>
+        <image name="stickerCatDissapoint.gif" width="512" height="512"/>
+        <image name="stickerCatFighter.gif" width="384" height="512"/>
+        <image name="stickerCatSad.gif" width="512" height="512"/>
         <image name="tokyoGhoulLabel" width="368" height="368"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
