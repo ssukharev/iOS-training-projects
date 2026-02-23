@@ -15,13 +15,18 @@ class TempGameViewController: UIViewController {
     @IBOutlet weak var viewWithButton: UIView!
     @IBOutlet weak var startGameButton: UIButton!
     @IBOutlet weak var currentCount: UILabel!
+    @IBOutlet weak var countTimerLabel: UILabel!
+    
     
     var gameStart: Bool = false
-    
     var clicksCount: Int = 0
+    var countTimer: Int = 30
+    var timer: Timer?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        countTimerLabel.isHidden = true
         viewWithButton.isHidden = true
         buttonOne.tintColor = UIColor.red
         buttonThree.tintColor = UIColor.green
@@ -56,12 +61,28 @@ class TempGameViewController: UIViewController {
         currentCount.text = "\(clicksCount)"
     }
     
+    func updateCountTimer() {
+        countTimerLabel.text = "Секунд осталось: \(countTimer)"
+    }
+    
     @IBAction func pressStartGameButton(_ sender: Any) {
         gameStart = true
+        countTimerLabel.isHidden = false
         startGameButton.isHidden = true
         hiddeAllButtonsGame()
         viewWithButton.isHidden = false
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countTime), userInfo: nil, repeats: true)
         game()
+    }
+    
+    @objc func countTime() {
+        countTimer -= 1
+        if countTimer == 0 {
+            timer?.invalidate()
+            timer = nil
+            performSegue(withIdentifier: "showEndGameSegue", sender: self)
+        }
+        updateCountTimer()
     }
     
     @IBAction func pressEndGameButton(_ sender: Any) {

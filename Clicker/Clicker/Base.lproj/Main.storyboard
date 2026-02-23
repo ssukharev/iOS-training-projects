@@ -166,7 +166,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="forceRightToLeft" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAE-S5-F35">
+                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="forceRightToLeft" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAE-S5-F35">
                                 <rect key="frame" x="102" y="675" width="186" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -203,6 +203,13 @@
                                     <action selector="pressStartGameButton:" destination="EDr-Nq-Aaf" eventType="touchUpInside" id="BHd-ay-t8q"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipd-pq-NDN">
+                                <rect key="frame" x="16" y="534" width="297" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6VV-Si-EQb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -211,6 +218,7 @@
                         <outlet property="buttonOne" destination="ZsZ-Mu-Jpc" id="Ebf-Vd-liz"/>
                         <outlet property="buttonThree" destination="ZQz-YH-oht" id="bmh-Xj-YMW"/>
                         <outlet property="buttonTwo" destination="pCi-Yf-AaN" id="hws-CK-OnH"/>
+                        <outlet property="countTimerLabel" destination="ipd-pq-NDN" id="uAx-Ub-iWQ"/>
                         <outlet property="currentCount" destination="lmF-La-k3e" id="mh5-6u-4aS"/>
                         <outlet property="startGameButton" destination="m9R-jU-B6B" id="0FR-hi-785"/>
                         <outlet property="viewWithButton" destination="Hbq-MG-Jp0" id="yMP-Ee-uM5"/>
