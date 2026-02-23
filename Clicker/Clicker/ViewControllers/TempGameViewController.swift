@@ -23,6 +23,8 @@ class TempGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewWithButton.isHidden = true
+        buttonOne.tintColor = UIColor.red
+        buttonThree.tintColor = UIColor.green
     }
     
     func hiddeAllButtonsGame() {
@@ -85,6 +87,11 @@ class TempGameViewController: UIViewController {
     
      //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showEndGameSegue" {
+            if let destinationVC = segue.destination as? EndGameViewController {
+                destinationVC.lastGameCount = clicksCount
+            }
+        }
     }
 
 }

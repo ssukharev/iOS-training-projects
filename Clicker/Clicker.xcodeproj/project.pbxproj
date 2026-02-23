@@ -13,6 +13,7 @@
 		34776C3A2F1C1DAD0023A26A /* stickerCatCute.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34776C322F1C1DAD0023A26A /* stickerCatCute.gif */; };
 		34776C3B2F1C1DAD0023A26A /* stickerCatHappy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 34776C352F1C1DAD0023A26A /* stickerCatHappy.gif */; };
 		34E37FB22F4C88000068556F /* TempGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E37FB12F4C88000068556F /* TempGameViewController.swift */; };
+		34E37FB42F4CBAA60068556F /* EndGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E37FB32F4CBAA60068556F /* EndGameViewController.swift */; };
 		740A51012E4605460040AC28 /* FLAnimatedImage in Frameworks */ = {isa = PBXBuildFile; productRef = 740A51002E4605460040AC28 /* FLAnimatedImage */; };
 		7450AE1A2E2ED608000BBA71 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450AE192E2ED608000BBA71 /* ShopViewController.swift */; };
 		7450AE1C2E2ED905000BBA71 /* KanekiInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7450AE1B2E2ED905000BBA71 /* KanekiInfoViewController.swift */; };
@@ -47,6 +48,7 @@
 		34776C362F1C1DAD0023A26A /* stickerCatSad.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = stickerCatSad.gif; sourceTree = "<group>"; };
 		34BA61AB2F1A6DB6006C6FD2 /* ClickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E37FB12F4C88000068556F /* TempGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempGameViewController.swift; sourceTree = "<group>"; };
+		34E37FB32F4CBAA60068556F /* EndGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndGameViewController.swift; sourceTree = "<group>"; };
 		7450AE192E2ED608000BBA71 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		7450AE1B2E2ED905000BBA71 /* KanekiInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanekiInfoViewController.swift; sourceTree = "<group>"; };
 		748779762E3664C800D6E227 /* SecretStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretStyleViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				74B3B6C02E32BEBC00F0000B /* GutsInfoViewController.swift */,
 				748779762E3664C800D6E227 /* SecretStyleViewController.swift */,
 				34E37FB12F4C88000068556F /* TempGameViewController.swift */,
+				34E37FB32F4CBAA60068556F /* EndGameViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			files = (
 				7499ED072E2C2ECC000CDB2F /* SecretViewController.swift in Sources */,
 				34E37FB22F4C88000068556F /* TempGameViewController.swift in Sources */,
+				34E37FB42F4CBAA60068556F /* EndGameViewController.swift in Sources */,
 				7499ED092E2C2EDB000CDB2F /* MenuViewController.swift in Sources */,
 				74E5E0D12E297E0900FCB7E1 /* AppDelegate.swift in Sources */,
 				7499ED052E2C2EC0000CDB2F /* GutsViewController.swift in Sources */,

@@ -12,6 +12,7 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var resultLastGameLabel: UILabel!
     
+    var clicksCount: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +21,9 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func backToMenuViewController(sender: UIStoryboardSegue) {
-        if let segueVC = sender.source as? TempGameViewController {
-            resultLastGameLabel.text = "\(segueVC.clicksCount)"
+        if let segueVC = sender.source as? EndGameViewController {
+            resultLastGameLabel.text = segueVC.lastGameCountLabel.text
+            clicksCount += segueVC.lastGameCount
         }
     }
     
