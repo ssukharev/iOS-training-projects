@@ -10,11 +10,19 @@ import UIKit
 class MenuViewController: UIViewController {
 
     @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var resultLastGameLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func backToMenuViewController(sender: UIStoryboardSegue) {
+        if let segueVC = sender.source as? TempGameViewController {
+            resultLastGameLabel.text = "\(segueVC.clicksCount)"
+        }
     }
     
 
